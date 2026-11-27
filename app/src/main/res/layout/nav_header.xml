@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="@color/purple_700"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="bottom|center_horizontal">
+
+    <!-- 头像 -->
+    <ImageView
+        android:id="@+id/imgAvatar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/avatar"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_default_avatar"
+        android:background="@drawable/avatar_background"
+        android:padding="4dp" />
+
+    <!-- 用户邮箱 -->
+    <TextView
+        android:id="@+id/navHeaderEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_email"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>

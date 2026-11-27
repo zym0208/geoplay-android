@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Java豆</string>
+    <string name="title_activity_waypoint_list">航点列表</string>
+    <string name="title_activity_maps">地图活动</string>
+    <string name="title_activity_maps2">地图活动2</string>
+    <string name="select_language">选择语言</string>
+    <string name="welcome_prefix">欢迎,</string>
+    <string name="logout">退出登录</string>
+    <string name="language_setting">语言设置</string>
+    <string name="user_email">用户邮箱</string>
+    <string name="back">返回</string>
+    <string name="register">注册</string>
+    <string name="login">登录</string>
+    <string name="password">密码</string>
+    <string name="email">邮箱</string>
+    <string name="username">用户名</string>
+    <string name="welcome">欢迎！</string>
+    <string name="log_out">退出登录</string>
+    <string name="gps">GPS</string>
+    <string name="settings">设置</string>
+    <string name="show_waypoint_list">显示航点列表</string>
+    <string name="show_map">显示地图</string>
+    <string name="new_waypoint">新建航点</string>
+    <string name="location_updates">位置更新</string>
+    <string name="cell_tower_wifi">基站 + Wifi</string>
+    <string name="gps_save_power">GPS / 节省电量</string>
+    <string name="off">关闭</string>
+    <string name="waypoints_label">航点：</string>
+    <string name="lon_label">经度：</string>
+    <string name="lat_label">纬度：</string>
+    <string name="altitude_label">海拔：</string>
+    <string name="accuracy_label">精度：</string>
+    <string name="speed_label">速度：</string>
+    <string name="sensor_label">传感器：</string>
+    <string name="updates_label">更新：</string>
+    <string name="address_label">地址：</string>
+    <string name="avatar" >头像</string>
+    <string name="enter_friend_email">输入好友邮箱</string>
+    <string name="add_friend">添加</string>
+    <string name="cancel">取消</string>
+    <string name="friend_added">好友已填加</string>
+    <string name="add_failed">添加失败: %1$s</string>
+    <string name="send_request">发送请求</string>
+    <string name="request_sent">请求已发送</string>
+    <string name="request_failed">请求失败</string>
+    <string name="request_handled">请求已处理</string>
+    <string name="friend_request_from">好友请求来自: %1$s</string>
+    <string name="my_favorite_games">我喜欢的游戏</string>
+    <string name="my_creations">我的创作</string>
+    <string name="title_activity_pending_requests" >请求列表</string>
+    <string name="pending_requests" >待处理邀请</string>
+    <string name="my_friends" >我的朋友</string>
+
+    <string name="title_activity_play_race" >赛跑游戏</string>
+    <string name="new_game" >新游戏</string>
+    <string name="ar">AR</string>
+    <string name="title_activity_race_creation">跑步游戏</string>
+
+    <string name="My_quizgame" >我的问卷游戏 </string>
+    <string name="My_Racegame">我的比赛游戏 </string>
+
+</resources>

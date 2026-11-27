@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="#F9F9F9">
+
+    <TextView
+        android:id="@+id/tvGameName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Game"
+        android:textColor="#222222"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvYourScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You: 80"
+        android:textColor="#222222"
+        android:layout_marginEnd="16dp"/>
+
+    <TextView
+        android:id="@+id/tvFriendScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#222222"
+        android:text="Friend: 72"/>
+</LinearLayout>

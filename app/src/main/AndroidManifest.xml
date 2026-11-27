@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera.ar"
+        android:required="true" />
+
+    <application
+        android:label="GeoPlay"
+        android:name=".GPSLocations"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.JavaBean"
+        tools:targetApi="31">
+        <activity
+            android:name=".MyCreationsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FavoriteGamesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FriendProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlayQuizActivity"
+            android:exported="false" />
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="REPLACE_WITH_LOCAL_SECRET" />
+        <meta-data
+            android:name="com.google.ar.core"
+            android:value="optional" />
+
+        <activity
+            android:name=".PlayRaceActivity"
+            android:exported="false"
+            android:label="@string/title_activity_play_race" />
+        <activity
+            android:name=".CreateGameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuizCreationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RaceCreationActivity"
+            android:exported="false"
+            android:label="@string/title_activity_race_creation" />
+        <activity
+            android:name=".MapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".ShowSavedLocationsList"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:theme="@style/Theme.JavaBean" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.JavaBean"> <!-- 加上 exported！ -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GPSActivity"
+            android:theme="@style/Theme.JavaBean" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.JavaBean" />
+        <activity
+            android:name=".FriendsListActivity"
+            android:theme="@style/Theme.JavaBean" />
+        <activity
+            android:name=".PendingFriendRequestsActivity"
+            android:theme="@style/Theme.JavaBean" />
+        <activity
+            android:name=".ARActivity"
+            android:theme="@style/AppTheme">
+
+            <!-- 其他属性 -->
+        </activity>
+    </application>
+
+</manifest>

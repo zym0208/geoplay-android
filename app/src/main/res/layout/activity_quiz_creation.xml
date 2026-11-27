@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizCreationActivity">
+
+    <EditText
+        android:id="@+id/edtCorrectAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="256dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtAnswer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtCorrectAnswer" />
+
+    <EditText
+        android:id="@+id/edtAnswer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtAnswer1" />
+
+    <EditText
+        android:id="@+id/edtAnswer3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtAnswer2" />
+
+    <TextView
+        android:id="@+id/lblCorrectAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Correct Answer:"
+        app:layout_constraintBottom_toBottomOf="@+id/edtCorrectAnswer"
+        app:layout_constraintEnd_toStartOf="@+id/edtCorrectAnswer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edtCorrectAnswer" />
+
+    <EditText
+        android:id="@+id/edtQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="180dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question:"
+        app:layout_constraintBottom_toBottomOf="@+id/edtQuestion"
+        app:layout_constraintEnd_toStartOf="@+id/edtQuestion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edtQuestion" />
+
+    <TextView
+        android:id="@+id/lblAnswer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Incorrect Answer:"
+        app:layout_constraintBottom_toBottomOf="@+id/edtAnswer1"
+        app:layout_constraintEnd_toStartOf="@+id/edtAnswer1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtCorrectAnswer" />
+
+    <TextView
+        android:id="@+id/lblAnswer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Incorrect Answer:"
+        app:layout_constraintBottom_toBottomOf="@+id/edtAnswer2"
+        app:layout_constraintEnd_toStartOf="@+id/edtAnswer2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtAnswer1" />
+
+    <TextView
+        android:id="@+id/lblAnswer3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Incorrect Answer:"
+        app:layout_constraintBottom_toBottomOf="@+id/edtAnswer3"
+        app:layout_constraintEnd_toStartOf="@+id/edtAnswer3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtAnswer2" />
+
+    <Button
+        android:id="@+id/btnBackQuestion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnCreateQuiz"
+        app:layout_constraintStart_toStartOf="@+id/btnCreateQuiz" />
+
+    <Button
+        android:id="@+id/btnCreateQuiz"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Create Quiz"
+        app:layout_constraintBottom_toTopOf="@+id/btnBackQuestion"
+        app:layout_constraintEnd_toEndOf="@+id/btnAddQuestion"
+        app:layout_constraintStart_toStartOf="@+id/btnAddQuestion" />
+
+    <Button
+        android:id="@+id/btnAddQuestion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Add Question"
+        app:layout_constraintBottom_toTopOf="@+id/btnCreateQuiz"
+        app:layout_constraintEnd_toEndOf="@+id/btnUndoQuestion"
+        app:layout_constraintStart_toStartOf="@+id/btnUndoQuestion" />
+
+    <Button
+        android:id="@+id/btnUndoQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Undo last question"
+        app:layout_constraintBottom_toTopOf="@+id/btnAddQuestion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblQuizTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="CREATE QUIZ"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quiz name:"
+        app:layout_constraintBottom_toBottomOf="@+id/edtQuizName"
+        app:layout_constraintEnd_toStartOf="@+id/edtQuizName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edtQuizName" />
+
+    <EditText
+        android:id="@+id/edtQuizName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/edtQuestion"
+        app:layout_constraintEnd_toEndOf="@+id/edtQuestion"
+        app:layout_constraintStart_toStartOf="@+id/edtQuestion"
+        app:layout_constraintTop_toBottomOf="@+id/lblQuizTitle" />
+
+    <TextView
+        android:id="@+id/lblQuestionCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Questions: 0"
+        app:layout_constraintBottom_toTopOf="@+id/btnUndoQuestion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

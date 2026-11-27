@@ -1,0 +1,51 @@
+
+<resources>
+    <string name="app_name">Java Bean</string>
+
+    <string name="title_activity_waypoint_list">Waypoint List</string>
+    <string name="title_activity_maps">Maps Activity</string>
+    <string name="title_activity_maps2">Maps Activity 2</string>
+
+    <string name="select_language">Select Language</string>
+    <string name="welcome_prefix">Welcome,</string>
+    <string name="logout">Log out</string>
+    <string name="language_setting">Language Setting</string>
+    <string name="user_email">User Email</string>
+    <string name="back">Back</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="username">Username</string>
+    <string name="welcome">Welcome!</string>
+    <string name="log_out">Log out</string>
+    <string name="gps">GPS</string>
+    <string name="settings">Settings</string>
+    <string name="show_waypoint_list">Show Waypoint List</string>
+    <string name="show_map">Show Map</string>
+    <string name="new_waypoint">New Waypoint</string>
+    <string name="location_updates">Location Updates</string>
+    <string name="cell_tower_wifi">Cell Tower + Wifi</string>
+    <string name="gps_save_power">GPS / Save Power</string>
+    <string name="off">Off</string>
+    <string name="waypoints_label">Waypoints:</string>
+    <string name="lon_label">Lon:</string>
+    <string name="lat_label">Lat:</string>
+    <string name="altitude_label">Altitude:</string>
+    <string name="accuracy_label">Accuracy:</string>
+    <string name="speed_label">Speed:</string>
+    <string name="sensor_label">Sensor:</string>
+    <string name="updates_label">Updates:</string>
+    <string name="address_label">Address:</string>
+    <string name="avatar" >Avatar</string>
+    <string name="enter_friend_email">Enter Friend Name</string>
+    <string name="add_friend">Add</string>
+    <string name="cancel">Cancel</string>
+    <string name="friend_added">Friend added!</string>
+    <string name="add_failed">Add failed: %1$s</string>
+    <string name="send_request">Send Request</string>
+    <string name="request_sent">Request sent</string>
+    <string name="request_failed">Request failed</string>
+    <string name="request_handled">Request handled</string>
+    <string name="friend_request_from">Friend request from: %1$s</string>
+</resources>
